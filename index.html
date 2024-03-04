@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <link rel = "stylesheet" href="style.css">
+    <title>My Portfolio</title>
+    <style> 
+        body{
+            background-color: pink;
+            color: black;
+            font-family: sans-serif;
+        }
+        .dark-mode{
+            background-color: black;
+            color: white;
+        }
+        header{
+            background-color: pink;
+            color: deepskyblue;
+            font-family: cursive;
+            display:inline-block;
+            width: 100%;
+            float: none;
+        }
+            h1{
+            float: none;
+            text-align: center;
+            font-size: 300%;
+        }
+        h1 span{
+            font-family:cursive;
+        }
+        .nav-bar{
+            background-color: rgba(236, 241, 243, 0.7);
+            text-align: center;
+            clear: both;
+        }
+        .nav-bar ul{
+            display: inline-flex;
+            list-style: cross-fade();
+            color: deeppink;
+        }
+        .nav-bar ul li{
+            width: 150px;
+            margin: 5px;
+            padding:1px;
+        }
+        
+        .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: " ";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+        footer{
+            text-align: center;
+            color: black;
+            font-size: small;
+            font-style: italic;
+        }
+
+    </style>
+    </head>
+    <body>
+        <header>
+            <h1>
+                My Portfolio
+            </h1>
+        </header>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+            <script>function myFunction() {
+           var element = document.body;
+          element.classList.toggle("dark-mode");
+            }</script>
+        <div class="nav-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="WDPage2.html">About</a></li>
+                <li><a href="WDPage3.html">Contact</a></li>
+                </ul>
+                </div>
+<p>Hello! Welcome to my portfolio</p>
